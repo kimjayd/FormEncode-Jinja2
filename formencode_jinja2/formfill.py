@@ -73,6 +73,6 @@ class FormFillExtension(jinja2.ext.Extension):
             rv, defaults, errors, error_formatters=self.ERROR_FORMATTERS)
 
     ERROR_FORMATTERS = {
-        'default': lambda msg: '<span class="error-message">{0}</span>'
-                               .format(msg),
+        'default': lambda msg: u'<span class="error-message">{0}</span>'
+                                .format(msg),
     }
